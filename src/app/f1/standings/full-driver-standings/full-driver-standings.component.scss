@@ -1,0 +1,61 @@
+.all {
+    padding: 40px;
+
+    h1 {
+        font-size: 50px;
+    }
+
+    table {
+        margin: 30px 0;
+
+        thead {
+            font-size: 13px;
+
+            tr {
+                th {
+                    color: #9f9d9d;
+                    padding: 20px;
+                }
+            }
+
+            th:first-child,
+            th:last-child {
+                text-decoration: 2px dotted rgb(151, 150, 150) underline;
+            }
+        }
+
+        tbody {
+            font-size: 15px;
+
+            tr {
+
+                td,
+                th {
+                    padding: 20px;
+                }
+
+                td:last-child {
+                    padding-right: 50px;
+                }
+
+                td:nth-child(2) {
+                    cursor: pointer;
+                }
+
+                td:nth-child(3),
+                td:nth-child(4) {
+                    font-size: 13px;
+                }
+
+                td:nth-child(4) {
+                    color: #9f9d9d;
+                }
+
+
+            }
+
+        }
+
+
+    }
+}

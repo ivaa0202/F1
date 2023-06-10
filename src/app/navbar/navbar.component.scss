@@ -1,0 +1,128 @@
+.row {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+
+    .col1 {
+
+        img {
+            margin-left: 70px;
+            margin-right: 25px;
+            width: 37px;
+            height: 25px;
+            opacity: .4;
+        }
+
+        span {
+            content: "";
+            position: absolute;
+            top: 14px;
+            left: 122px;
+            width: 1px;
+            background: rgb(194, 192, 192);
+            height: 23px;
+        }
+    }
+
+    .col2 {
+        nav {
+            display: flex;
+            justify-content: flex-end;
+
+            ul {
+                display: flex;
+                align-items: center;
+
+                li {
+                    list-style: none;
+                    padding: 0 7px;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 12px;
+
+                        &:hover {
+                            color: #e23721;
+                            border-bottom: 3px solid #e23721;
+                        }
+                    }
+                }
+
+                img {
+                    width: 80px;
+                    height: 53px;
+                    cursor: pointer;
+                    margin: 0 20px;
+                }
+
+                span {
+                    content: "";
+                    width: 1px;
+                    background: grey;
+                    height: 23px;
+                }
+
+                .span-f1-tv-left{
+                    position: absolute;
+                    top: 15px;
+                    right: 25%;
+                }
+
+                span:last-child {
+                    position: absolute;
+                    top: 15px;
+                    right: 18%;
+                }
+
+            }
+        }
+
+    }
+
+}
+
+.coll3 {
+
+    .right-nav {
+
+        a {
+            color: white;
+            font-size: 12px;
+            text-decoration: none;
+            background-color: #e23721;
+            border-radius: 8px;
+
+            &:first-child {
+                background-color: black;
+                margin-right: 10px;
+                padding: 12px;
+    
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+
+            &:last-child {
+                border: 2px solid #e23721;
+                padding: 10px;
+                transition: 0.4s;
+    
+                &:hover {
+                    background-color: white;
+                    border: 2px solid #e23721;
+                    color: black;
+                }
+            }
+        }
+
+        i {
+            font-size: 16px;
+            padding-right: 5px;
+        }
+
+    }
+}

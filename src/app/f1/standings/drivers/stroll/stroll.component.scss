@@ -1,0 +1,22 @@
+@import "../../../shared/shared";
+@include driver();
+
+.main {
+    .fourth-section {
+        .also-divs {
+            .also-div {
+                &:first-child {
+                    img {
+                        object-fit: fill;
+                    }
+                }
+
+                &:nth-child(2) {
+                    img {
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}

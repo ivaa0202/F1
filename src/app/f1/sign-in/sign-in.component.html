@@ -1,0 +1,67 @@
+<div class="main">
+
+    <div class="row row1">
+        <img src="../assets/img/f1 logo.png">
+    </div>
+    <div class="row row2">
+        <div class="sign-in-and-register">
+            <span (click)="setActiveSection('sign-in')">Sign In</span>
+            <span (click)="setActiveSection('register')">Register</span>
+        </div>
+    </div>
+
+    <div *ngIf="activeSection === 'sign-in'" class="row row3">
+        <div class="sign-in-form">
+            <h1>SIGN IN</h1>
+            <hr>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter your username">
+                </div>
+                <div class="form-group second-form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1"
+                        placeholder="Enter your password"><i class="bi bi-eye-slash"></i>
+                </div>
+                <div class="forgotten-password"><a href="">Forgotten password?</a></div><br>
+                <button type="submit" class="btn btn-primary">SIGN IN</button><br>
+                <span>Don't have an account yet?</span><a href="">Register with F1</a>
+            </form>
+        </div>
+    </div>
+
+    <app-register *ngIf="activeSection === 'register'"></app-register>
+
+    <div class="row row4">
+
+        <div class="last-section">
+            <div class="wrap">
+                <div class="first-div">
+                    <img src="../assets/img/f1 logo.png">
+                    <ul>
+                        <li>Privacy Policy</li>
+                        <li>Subscription</li>
+                        <li> Terms Of Use</li>
+                        <li>FAQs</li>
+                        <li>Cookie Preferences</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="second-div">
+                    <ul>
+                        <li><a href="">EN</a></li>
+                        <li><a href="">FR</a></li>
+                        <li><a href="">DE</a></li>
+                        <li><a href="">ES</a></li>
+                        <li><a href="">NL</a></li>
+                        <li><a href="">PT</a></li>
+                    </ul>
+                    <span>© 2003-2023 Formula One World Championship Limited</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <span class="support-span"><i class="bi bi-chat-fill"></i>Support</span>
+</div>

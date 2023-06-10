@@ -1,0 +1,705 @@
+.glavni {
+    background-color: #e23721;
+    position: relative;
+    position: sticky;
+    top: 51px;
+    z-index: 3;
+
+    .f1-logo {
+        width: 135px;
+        height: 40px;
+        margin-left: 70px;
+    }
+
+    ul {
+        display: flex;
+        text-align: center;
+        padding-left: 10px;
+
+        li {
+            padding: 20px 15px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: black;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 19px;
+
+                i {
+                    padding-left: 5px;
+                    font-size: 12px;
+                }
+            }
+        }
+
+    }
+
+    .all-drop-downs {
+        position: absolute;
+        top: 75px;
+        left: 12px;
+        z-index: 2;
+        background-color: black;
+        width: 100%;
+        color: white;
+        padding: 50px 80px;
+        border-bottom: 2px solid #e23721;
+        visibility: hidden;
+        opacity: 0;
+        transition: 1s;
+
+        i {
+            color: #e23721;
+        }
+    }
+
+
+    .dropDown1 {
+
+        padding-bottom: 10px;
+
+        .latest-p {
+            border-right: 1px solid grey;
+            border-bottom: 1px solid grey;
+            padding-bottom: 10px;
+            border-bottom-right-radius: 10px;
+            font-size: 20px;
+            font-weight: bolder;
+            text-align: left;
+        }
+
+        .topics-h,
+        .news-h {
+            font-size: 20px;
+            font-weight: bolder;
+            margin: 30px 0 10px 0;
+            text-align: left;
+        }
+
+        .topics-h {
+            margin: 30px 0 5px 12px;
+        }
+
+        .news-h {
+            margin: 30px 0 20px 0;
+        }
+
+        .ceoNews {
+            width: 24%;
+
+            .news {
+                text-align: left;
+
+                .news-pojednicano {
+                    position: relative;
+                    border-bottom: 1px solid grey;
+                    margin-bottom: 20px;
+                    height: 115px;
+                    cursor: pointer;
+                    transition: .5s;
+
+                    &:hover {
+                        border-bottom-color: #e23721;
+
+                    }
+
+                    img {
+                        width: 105px;
+                        height: 60px;
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                    }
+
+                    .small-p {
+                        position: absolute;
+                        top: 0;
+                        left: 130px;
+                        font-size: 15px;
+                        width: 170px;
+                    }
+                }
+
+                .news-pojednicano:last-child {
+                    height: 100px;
+                }
+            }
+        }
+
+        .ceoTopics {
+            position: absolute;
+            top: 84px;
+            left: 415px;
+
+            .topics {
+                display: flex;
+                flex-wrap: wrap;
+
+                .topics-pojedinacno {
+                    position: relative;
+                    padding: 10px 13px;
+
+                    .wrap-img {
+                        overflow: hidden;
+                        border: 1px solid grey;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        transition: .5s;
+
+                        img {
+                            width: 290px;
+                            height: 110px;
+                            transition: transform 0.5s;
+                        }
+
+                        &:hover {
+                            border-color: #e23721;
+
+                            img {
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+
+                    h5 {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        text-shadow: 5px 5px 15px black;
+                        font-size: 22px;
+                        transition: .3s;
+                    }
+
+                    &:hover {
+                        h5 {
+                            font-weight: bolder;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .ceoDrop1:hover {
+        .dropDown1 {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+
+
+
+    .dropDown2 {
+
+        .dva-a-linka {
+            margin-bottom: 30px;
+            border-bottom: 1px solid grey;
+            border-right: 1px solid grey;
+            border-bottom-right-radius: 10px;
+            padding-bottom: 10px;
+            text-align: start;
+
+            a {
+                font-size: 20px;
+                margin-right: 25px;
+                font-weight: 600;
+
+                &:hover {
+                    text-decoration: 3px solid red underline;
+                }
+
+                i {
+                    font-size: 15px;
+                }
+
+            }
+        }
+
+        .schedule {
+            display: flex;
+
+            .schedule-pojedinacno {
+                width: 23.5%;
+                padding: 20px;
+                padding-bottom: 0;
+                position: relative;
+
+                .span-ugao1 {
+                    position: absolute;
+                    top: -22px;
+                    left: 0;
+                    background-color: black;
+                    padding: 10px;
+                    padding-left: 20px;
+                }
+
+                .span-ugao2 {
+                    position: absolute;
+                    top: 0;
+                    left: 20px;
+                }
+
+                .wrap-img-span {
+                    position: relative;
+                    text-align: center;
+
+                    .wrap-img {
+                        overflow: hidden;
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+
+                        img {
+                            height: auto;
+                            width: 100%;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            transition: transform 0.5s;
+                            display: block;
+                        }
+                    }
+
+                    span {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 26px;
+                        text-shadow: 2px 2px white;
+                    }
+
+                }
+
+                .p-ispod-slike {
+                    margin-top: 10px;
+                    border-bottom: 1px solid grey;
+                    border-right: 1px solid grey;
+                    border-bottom-right-radius: 20px;
+                    text-align: left;
+                    padding: 10px;
+                    height: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    p:first-child {
+                        font-size: 15px;
+                        color: #b8b8bb;
+                    }
+
+                    p:nth-child(2) {
+                        font-size: 13px;
+                        display: flex;
+                        justify-content: space-between;
+
+                        i {
+                            font-size: 12px;
+                            color: #b8b8bb;
+                        }
+                    }
+
+                }
+
+
+                &:first-child {
+                    border-top: 10px solid grey;
+                    border-right: 10px solid grey;
+                    border-top-right-radius: 30px;
+                }
+
+
+                &:hover {
+                    img {
+                        transform: scale(1.1);
+                    }
+
+                    .p-ispod-slike {
+                        border-color: #e23721;
+
+                        i {
+                            color: #e23721;
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+    }
+
+    .ceoDrop2:hover {
+        .dropDown2 {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+
+
+    .dropDown3 {
+        padding: 30px 160px;
+
+        .link-group {
+            display: flex;
+            border-bottom: 1px solid grey;
+            border-right: 1px solid grey;
+            border-bottom-right-radius: 15px;
+            padding-bottom: 20px;
+            padding-top: 10px;
+
+            a {
+                padding-right: 40px;
+
+                &:hover {
+                    text-decoration: 3px solid red underline;
+                }
+            }
+        }
+
+
+    }
+
+    .ceoDrop3:hover {
+        .dropDown3 {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+
+
+    .dropDown4 {
+
+        padding: 30px 160px;
+
+        .links-4 {
+            border-bottom: 1px solid grey;
+            border-right: 1px solid grey;
+            border-bottom-right-radius: 10px;
+            margin-bottom: 50px;
+            display: flex;
+            text-align: center;
+            justify-content: flex-start;
+            padding: 10px 0;
+        }
+
+
+        .drivers-group {
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                li {
+                    width: 23%;
+                    border-bottom: 1px solid grey;
+                    border-right: 1px solid grey;
+                    border-bottom-right-radius: 10px;
+                    margin-bottom: 10px;
+                    text-align: left;
+                    padding: 10px 5px;
+
+                    span {
+
+                        height: 12px;
+                        width: 4px;
+                        display: inline-block;
+                        background-color: aquamarine;
+                        margin-right: 5px;
+                        vertical-align: baseline;
+                    }
+
+                    .boja-ferari {
+                        background-color: #e23721;
+                    }
+
+                    .boja-red-bull {
+                        background-color: #3671C6;
+                    }
+
+                    .boja-merc {
+                        background-color: #6CD3BF;
+                    }
+
+                    .boja-alpine {
+                        background-color: #2293D1;
+                    }
+
+                    .boja-haas {
+                        background-color: #B6BABD;
+                    }
+
+                    .boja-alfa {
+                        background-color: #C92D4B;
+                    }
+
+                    .boja-mclaren {
+                        background-color: #F58020;
+                    }
+
+                    .boja-aston-martin {
+                        background-color: #358C75;
+                    }
+
+                    .boja-alpha-tauri {
+                        background-color: #5E8FAA;
+                    }
+
+                    .boja-williams {
+                        background-color: #37BEDD;
+                    }
+
+                    i {
+                        color: white;
+                        vertical-align: baseline;
+                    }
+
+                }
+
+                .hover-ferrari:hover {
+                    border-color: #e23721;
+                }
+
+                .hover-red-bull:hover {
+                    border-color: #3671C6;
+                }
+
+                .hover-mercedes:hover {
+                    border-color: #6CD3BF;
+                }
+
+                .hover-alpine:hover {
+                    border-color: #2293D1;
+                }
+
+                .hover-haas:hover {
+                    border-color: #B6BABD;
+                }
+
+                .hover-alfa:hover {
+                    border-color: #C92D4B;
+                }
+
+                .hover-mclaren:hover {
+                    border-color: #F58020;
+                }
+
+                .hover-aston:hover {
+                    border-color: #358C75;
+                }
+
+                .hover-alphatauri:hover {
+                    border-color: #5E8FAA;
+                }
+
+                .hover-williams:hover {
+                    border-color: #37BEDD;
+                }
+
+            }
+        }
+    }
+
+    .ceoDrop4:hover {
+        .dropDown4 {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+
+    .dropDown5 {
+        padding: 30px 160px;
+
+        a {
+            border-bottom: 1px solid grey;
+            border-right: 1px solid grey;
+            border-bottom-right-radius: 10px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: flex-start;
+            padding: 10px 0;
+
+        }
+
+        .team-row {
+            display: flex;
+
+            .one-team {
+                border-bottom: 1px solid grey;
+                border-right: 1px solid grey;
+                border-bottom-right-radius: 10px;
+                width: 23%;
+                margin-right: 25px;
+                margin-top: 20px;
+
+                .nameOfTeam {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .wrapp {
+                    position: relative;
+
+                    img {
+                        width: 190px;
+                        margin-top: 10px;
+                        align-items: flex-start;
+                    }
+
+                    .crta {
+                        display: block;
+                        height: 20px;
+                        width: 50px;
+                        background-color: #358C75;
+                        position: absolute;
+                        top: 30px;
+                        left: 15px;
+                        z-index: -1;
+                    }
+
+                    .boja-ferari {
+                        background-color: #e23721;
+                    }
+
+                    .boja-red-bull {
+                        background-color: #3671C6;
+                    }
+
+                    .boja-merc {
+                        background-color: #6CD3BF;
+                    }
+
+                    .boja-alpine {
+                        background-color: #2293D1;
+                    }
+
+                    .boja-haas {
+                        background-color: #B6BABD;
+                    }
+
+                    .boja-alfa {
+                        background-color: #C92D4B;
+                    }
+
+                    .boja-mclaren {
+                        background-color: #F58020;
+                    }
+
+                    .boja-aston-martin {
+                        background-color: #358C75;
+                    }
+
+                    .boja-alpha-tauri {
+                        background-color: #5E8FAA;
+                    }
+
+                    .boja-williams {
+                        background-color: #37BEDD;
+                    }
+                }
+            }
+
+            .hover-ferrari:hover {
+                border-color: #e23721;
+            }
+
+            .hover-red-bull:hover {
+                border-color: #3671C6;
+            }
+
+            .hover-mercedes:hover {
+                border-color: #6CD3BF;
+            }
+
+            .hover-alpine:hover {
+                border-color: #2293D1;
+            }
+
+            .hover-haas:hover {
+                border-color: #B6BABD;
+            }
+
+            .hover-alfa:hover {
+                border-color: #C92D4B;
+            }
+
+            .hover-mclaren:hover {
+                border-color: #F58020;
+            }
+
+            .hover-aston:hover {
+                border-color: #358C75;
+            }
+
+            .hover-alphatauri:hover {
+                border-color: #5E8FAA;
+            }
+
+            .hover-williams:hover {
+                border-color: #37BEDD;
+            }
+        }
+
+
+    }
+
+    .ceoDrop5:hover {
+        .dropDown5 {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+
+
+
+    .dropDown6 {
+        padding: 30px 120px;
+
+        .link-group {
+            display: flex;
+            border-bottom: 1px solid grey;
+            border-right: 1px solid grey;
+            border-bottom-right-radius: 15px;
+            padding-bottom: 20px;
+            padding-top: 10px;
+
+            a {
+                padding-right: 40px;
+
+                &:hover {
+                    text-decoration: 3px solid red underline;
+                }
+
+                i {
+                    font-size: 16px;
+                }
+            }
+        }
+
+
+    }
+
+    .ceoDrop6:hover {
+        .dropDown6 {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+
+
+
+}
+
+.navbar {
+    padding: 0;
+}

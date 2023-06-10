@@ -1,0 +1,94 @@
+section {
+    background-color: #15151e;
+
+    .ourParents{
+
+        text-align: center;
+    padding-top: 40px;
+
+        img {
+            height: 15px;
+            width: 62px;
+            margin-right: 5px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+    }
+
+    .sponzoriDiv {
+        padding-top: 55px;
+        display: flex;
+        justify-content: center;
+
+        img {
+            height: 80px;
+            width: 150px;
+            cursor: pointer;
+        }
+    }
+
+    hr {
+        width: 90%;
+        border-color: #38383f;
+        display: block;
+        margin: 30px auto 10px auto ;
+    }
+
+    .sponzoriDiv2 {
+        display: flex;
+        justify-content: center;
+
+        img {
+            height: 50px;
+            width: 100px;
+            cursor: pointer;
+        }
+    }
+
+    .link-group {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px 20px;
+
+        div {
+
+            a {
+                text-decoration: none;
+                display: inline-block;
+                padding-bottom: 20px;
+                font-size: 17px;
+                color: white;
+
+                &:hover {
+                    text-decoration: underline 2px solid #e23721;
+                }
+            }
+
+            .malaSlova {
+                font-size: 11px;
+            }
+        }
+    }
+
+    .ostatakLinkova {
+        padding: 20px 70px;
+
+        a {
+            display: inline-block;
+            padding: 10px 20px 10px 0;
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+
+            &:hover {
+                text-decoration: underline 2px solid #e23721;
+            }
+        }
+    }
+}
+
+

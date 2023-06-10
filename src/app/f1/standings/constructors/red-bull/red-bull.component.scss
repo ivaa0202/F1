@@ -1,0 +1,23 @@
+@import "../../../shared/shared";
+@include team();
+
+.main{
+    .first-section {
+        .left-col {
+            table {
+                tbody{
+    
+                tr {
+                    img {
+                        height: 120px;
+                        width: 260px;
+                    }
+    
+                }
+    
+            }
+    
+        }
+    }
+    }
+}

@@ -1,0 +1,124 @@
+section {
+    margin-left: 70px;
+    position: relative;
+
+    .wrap {
+        border-top: 12px solid #e23721;
+        border-right: 12px solid #e23721;
+        border-bottom: 12px solid #e23721;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        margin-right: 70px;
+        margin-top: 40px;
+
+        h2 {
+            position: absolute;
+            top: -9px;
+            background-color: white;
+            padding-right: 50px;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        iframe {
+            margin-top: 50px;
+            padding-bottom: 150px;
+        }
+
+        .slikePoredVidea {
+            display: flex;
+            flex-wrap: wrap;
+            position: absolute;
+            top: 52px;
+            right: 60px;
+            cursor: pointer;
+
+            .jedna-pored-videa {
+                width: 300px;
+                margin: 10px;
+
+                .wrap-img {
+                    overflow: hidden;
+
+                    img {
+                        height: 170px;
+                        width: 300px;
+                        transition: transform 0.5s;
+                    }
+                }
+
+                p {
+                    width: 300px;
+                    height: 100px;
+                    padding: 12px;
+                    padding-bottom: 40px;
+                    font-size: 17px;
+                    border-bottom: 1px solid gray;
+                    border-right: 1px solid gray;
+                    background-color: white;
+                    border-bottom-right-radius: 10px;
+
+                    i {
+                        position: absolute;
+                        top: -60px;
+                        left: 0;
+                        color: #e23721;
+                        background-color: white;
+                        padding: 15px;
+                        border-top-right-radius: 15px;
+                        font-size: 30px;
+                        transition: .4s;
+                    }
+
+                    span {
+                        font-size: 12px;
+                        color: #e23721;
+                        display: inline-block;
+                        padding-bottom: 7px;
+                    }
+                }
+
+
+
+
+                &:first-child,
+                &:nth-child(2) {
+                    position: relative;
+
+                    p {
+                        transition: .4s;
+                        position: absolute;
+                        left: 0;
+                        bottom: -100px;
+                    }
+                }
+
+                &:last-child,
+                &:nth-child(3) {
+                    p {
+                        margin-top: 120px;
+                    }
+                }
+
+                &:hover {
+                    p {
+                        border-color: #e23721;
+                    }
+
+                    img {
+                        transform: scale(1.2);
+                    }
+
+                    &:first-child,
+                    &:nth-child(2) {
+                        p {
+                            height: 110px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}

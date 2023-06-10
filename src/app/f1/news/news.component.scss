@@ -1,0 +1,141 @@
+.cetvrtaSekcija {
+    margin-top: 30px;
+    position: relative;
+
+    .left-div {
+        border-top: 10px solid #e23721;
+        border-right: 10px solid #e23721;
+        border-top-right-radius: 25px;
+        margin-left: 70px;
+
+        p {
+            font-size: xx-large;
+            font-weight: bold
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+            margin-bottom: 20px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+
+        span {
+            font-size: 12px;
+            display: inline-block;
+            padding-top: 15px;
+            padding-bottom: 10px;
+        }
+
+        .wrap {
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                cursor: pointer;
+                transition: transform 0.5s;
+            }
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .right-div {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: scroll;
+        height: 606px;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .mini {
+            width: 300px;
+            cursor: pointer;
+            margin: 10px 10px 125px 10px;
+            position: relative;
+
+            .wrap-img {
+                position: relative;
+                overflow: hidden;
+
+                img {
+                    height: 170px;
+                    width: 300px;
+                    transition: transform 0.5s;
+                }
+            }
+
+            p {
+                border-bottom: 1px solid gray;
+                border-right: 1px solid gray;
+                border-bottom-right-radius: 10px;
+                font-size: 17px;
+                padding: 12px;
+                height: 120px;
+                background-color: white;
+                transition: .4s;
+                position: absolute;
+                left: 0;
+                bottom: -120px;
+            }
+
+            span {
+                font-size: 11px;
+                display: inline-block;
+                padding-top: 5px;
+                padding-bottom: 8px;
+                color: #e23721;
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+
+                p {
+                    border-color: #e23721;
+                    height: 135px;
+                }
+
+            }
+
+        }
+
+        .aView {
+            background-color: #e23721;
+            border: 2.5px solid #e23721;
+            margin: 10px 0 0 10px;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: small;
+            border-radius: 5px;
+            transition: 0.4s;
+
+            &:hover {
+                color: black;
+                background-color: white;
+                border-color: 5px solid #e23721;
+            }
+
+            i {
+                padding-left: 5px;
+                vertical-align: baseline;
+            }
+        }
+    }
+
+
+
+}

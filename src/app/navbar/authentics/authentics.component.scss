@@ -1,0 +1,341 @@
+.first-row {
+    .first-col {
+        background-color: red;
+        color: white;
+
+        nav {
+            img {
+                width: 125px;
+                height: 35px;
+                margin-left: 75px;
+            }
+
+            h1 {
+                font-size: 40px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bolder;
+            }
+
+            ul {
+                li {
+                    padding: 15px;
+
+                    a {
+                        color: white;
+                        font-size: 19px;
+
+                        i {
+                            font-size: 13px;
+                            padding-left: 3px;
+                            vertical-align: revert;
+                        }
+                    }
+
+                    &:hover {
+                        a {
+                            color: #d3d0d0;
+                        }
+                    }
+
+                }
+            }
+
+            input {
+                border: none;
+                background-color: red;
+                border-bottom: 1px solid white;
+
+                &::placeholder {
+                    color: white;
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+
+                &:focus{ outline-style: none; }
+            }
+
+        }
+
+    }
+
+    .all-drop-downs {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 67px;
+        left: 0px;
+        z-index: 2;
+        background-color: black;
+        width: 100%;
+        color: white;
+        padding: 20px 50px 50px 50px;
+        filter: drop-shadow(0 0 0.75rem black);
+        border-bottom: 2px solid #e23721;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            li {
+                width: 23%;
+                border-right: 1px solid grey;
+                border-bottom: 1px solid grey;
+                border-bottom-right-radius: 10px;
+                margin-top: 10px;
+                padding-left: 0;
+                padding: 12px;
+                cursor: pointer;
+                font-size: 18px;
+
+                &:hover {
+                    color: #d3d0d0;
+                }
+            }
+        }
+    }
+
+    .dropDown1 {
+
+        .hover-ferrari:hover {
+            border-color: #e23721;
+        }
+
+        .hover-red-bull:hover {
+            border-color: #3671C6;
+        }
+
+        .hover-mercedes:hover {
+            border-color: #6CD3BF;
+        }
+
+        .hover-alpine:hover {
+            border-color: #2293D1;
+        }
+
+        .hover-haas:hover {
+            border-color: #B6BABD;
+        }
+
+        .hover-alfa:hover {
+            border-color: #C92D4B;
+        }
+
+        .hover-mclaren:hover {
+            border-color: #F58020;
+        }
+
+        .hover-aston:hover {
+            border-color: #358C75;
+        }
+
+        .hover-alphatauri:hover {
+            border-color: #5E8FAA;
+        }
+
+        .hover-williams:hover {
+            border-color: #37BEDD;
+        }
+
+    }
+
+
+    .ceoDrop1:hover {
+        .dropDown1 {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .ceoDrop2:hover {
+        .dropDown2 {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .ceoDrop3:hover {
+        .dropDown3 {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .ceoDrop4:hover {
+        .dropDown4 {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+
+    .dropDown5 {
+        ul {
+            justify-content: flex-start;
+
+            li {
+                margin-right: 30px;
+            }
+        }
+    }
+
+
+
+    .ceoDrop5:hover {
+        .dropDown5 {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+
+}
+
+.logos {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0;
+
+    img {
+        height: 55px;
+        filter: grayscale(100%);
+        cursor: pointer;
+
+        &:hover {
+            filter: grayscale(0%);
+        }
+    }
+
+    .redbull {
+        width: 105px;
+    }
+
+    .ferrari {
+        width: 45px;
+    }
+
+    .merc {
+        height: 40px;
+        width: 125px;
+    }
+
+    .alpine {
+        width: 90px;
+    }
+
+    .mclaren {
+        width: 120px;
+    }
+
+    .alfa {
+        width: 105px;
+    }
+
+    .astonmartin {
+        width: 105px;
+    }
+
+    .haas {
+        width: 105px;
+    }
+
+    .alphatauri {
+        width: 75px;
+    }
+
+    .williams {
+        width: 95px;
+    }
+}
+
+.carousel-row {
+    padding: 0 40px;
+
+    img {
+        border-radius: 15px;
+    }
+}
+
+.row-sales {
+    padding: 60px 80px;
+
+    h3 {
+        padding-bottom: 20px;
+        padding-left: 25px;
+        font-size: 23px;
+        font-weight: bolder;
+    }
+
+    .all-sales {
+        display: flex;
+        justify-content: space-evenly;
+
+        .one-sale {
+            width: 25%;
+            justify-content: center;
+            text-align: center;
+            cursor: pointer;
+
+            img {
+                height: 300px;
+                width: 300px;
+                margin-bottom: 25px;
+            }
+
+            .text {
+                width: 85%;
+                margin: 0 auto;
+                font-size: 18px;
+
+                span {
+                    display: inline-block;
+                    margin-top: 10px;
+                }
+
+                .red-span {
+                    color: red;
+                    font-size: 27px;
+                    font-weight: bolder;
+                }
+
+                .span-limited {
+                    color: red;
+                    font-size: 15px;
+                }
+
+                .black-span {
+                    text-decoration-line: line-through;
+                    margin-top: 5px;
+                    font-size: 22px;
+                    font-weight: bolder;
+                }
+
+                button {
+                    border: none;
+                    background-color: red;
+                    color: white;
+                    margin: 10px 0;
+                    padding: 5px 10px;
+                    font-size: 14px;
+                }
+
+                i {
+                    color: red;
+                    padding-right: 5px;
+                    vertical-align: bottom;
+                }
+            }
+
+            &:hover {
+                img {
+                    opacity: .8;
+                }
+            }
+        }
+
+    }
+}
+
+.navbar {
+    padding: 0;
+}

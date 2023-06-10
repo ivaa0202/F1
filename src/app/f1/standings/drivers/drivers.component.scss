@@ -1,0 +1,316 @@
+section {
+    position: relative;
+
+    nav {
+        text-align: center;
+        padding: 20px;
+
+        span {
+            text-decoration: none;
+            color: black;
+            padding: 0 40px;
+            margin: 0 10px;
+            position: relative;
+            cursor: pointer;
+
+            &:nth-child(2){
+                border-left: 1px solid #d0d0d2;
+                border-right: 1px solid #d0d0d2;
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 4px;
+                bottom: -19px;
+                left: 0;
+                background-color: #e23721;
+                visibility: hidden;
+                transform: scaleX(0);
+                transition: all 0.3s ease-in-out 0s;
+            }
+
+            &:hover:before {
+                visibility: visible;
+                transform: scaleX(1);
+            }
+
+        }
+
+    }
+
+
+    .grey-area {
+        background-color: #2f2f3b;
+        height: 370px;
+
+        h1 {
+            color: white;
+            text-align: center;
+            padding-top: 60px;
+            font-size: 45px;
+            font-family: 'DM Serif Display', serif;
+        }
+
+
+        .first-three-places {
+            display: flex;
+            margin-top: 150px;
+            justify-content: center;
+            align-items: flex-end;
+
+
+            .one-driver {
+                padding-left: 10px;
+                position: relative;
+
+                .white-div {
+                    height: 110px;
+                    width: 320px;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    background-color: white;
+                }
+
+                .grey-div {
+                    height: 110px;
+                    width: 320px;
+                    background-color: #38383f;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+
+                    p {
+                        color: white;
+                        padding-top: 30px;
+                        padding-left: 20px;
+                        font-size: 17px;
+
+                        img {
+                            height: 17px;
+                            width: 27px;
+                            border-radius: 2px;
+                            margin-bottom: 5px;
+                        }
+
+                        span {
+                            font-size: 27px;
+                        }
+                    }
+
+                }
+            }
+
+            .lec {
+
+                .vozaciSlikeNajveca {
+                    height: 300px;
+                    width: 380px;
+                    position: absolute;
+                    top: -140px;
+                    left: 0;
+                }
+
+                .white-div-leclerc {
+                    height: 150px;
+                    width: 370px;
+                }
+
+                .red-div-leclerc {
+                    width: 370px;
+                }
+
+                .grey-div-leclerc {
+                    height: 110px;
+                    width: 370px;
+                }
+
+            }
+
+
+
+            .blue-div {
+                height: 10px;
+                width: 320px;
+                background-color: #265bc6;
+            }
+
+            .red-div {
+                height: 10px;
+                width: 320px;
+                background-color: #e23721;
+            }
+
+            .vozaciSlike {
+                height: 260px;
+                width: 330px;
+                position: absolute;
+                top: -140px;
+                left: 0;
+            }
+
+
+        }
+    }
+
+    .tabela {
+        background-color: #ededed;
+        padding-top: 200px;
+        height: 55em;
+        margin-bottom: 30px;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+
+            li {
+                width: 950px;
+                margin: 1px 0;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    background-color: white;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0 auto;
+                    padding: 16px 10px 16px 20px;
+                    transition: 0.2s;
+
+
+                    &:hover {
+                        background-color: #38383f;
+                        color: white;
+
+                        i {
+                            color: white;
+                        }
+                    }
+
+                    span {
+                        margin-right: 10px;
+
+                        &:nth-child(3) {
+                            margin-right: 4px;
+                        }
+                    }
+
+
+                    .broj {
+                        font-weight: bold;
+                    }
+
+                    .lastname {
+                        font-weight: bold;
+                        font-size: 17px;
+                        text-transform: uppercase;
+                    }
+
+                    .crtica {
+                        height: 15px;
+                        width: 5px;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+
+                    .boja-ferari {
+                        background-color: #e23721;
+                    }
+
+                    .boja-red-bull {
+                        background-color: #3671C6;
+                    }
+
+                    .boja-merc {
+                        background-color: #6CD3BF;
+                    }
+
+                    .boja-alpine {
+                        background-color: #2293D1;
+                    }
+
+                    .boja-haas {
+                        background-color: #B6BABD;
+                    }
+
+                    .boja-alfa {
+                        background-color: #C92D4B;
+                    }
+
+                    .boja-mclaren {
+                        background-color: #F58020;
+                    }
+
+                    .team {
+                        font-size: 14px;
+                        color: grey;
+                        vertical-align: bottom;
+                    }
+
+                    img {
+                        height: 37px;
+                        width: 120px;
+                        margin-right: 20px;
+                    }
+
+                    .drivers {
+                        font-size: 14px;
+                    }
+
+                    .second-span {
+                        font-size: 13px;
+                        font-weight: normal;
+                        text-transform: uppercase;
+                        background-color: #ededed;
+                        border-radius: 20px;
+                        color: black;
+                        padding: 5px 7px;
+                    }
+
+                    i {
+                        color: red;
+                    }
+                }
+
+            }
+
+        }
+
+        .full-standings {
+            display: block;
+            text-align: center;
+            margin-top: 25px;
+
+            a {
+                background-color: #e23721;
+                border: 2px solid #e23721;
+                color: white;
+                text-decoration: none;
+                padding: 10px 15px;
+                font-size: 13px;
+                border-radius: 5px;
+                transition: 0.4s;
+
+                &:hover {
+                    background-color: white;
+                    color: black;
+                    font-weight: 500;
+
+                    i {
+                        color: #e23721;
+                    }
+                }
+
+                i {
+                    vertical-align: baseline;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+    }
+
+}
