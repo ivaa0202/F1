@@ -182,6 +182,12 @@
 
                         }
 
+                        li:first-child {
+                            a {
+                                border-bottom: 2px solid red;
+                            }
+                        }
+
                     }
 
                     span {

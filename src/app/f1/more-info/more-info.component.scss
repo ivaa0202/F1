@@ -180,8 +180,7 @@ section {
                 position: relative;
 
                 p {
-                    font-size: 14px;
-
+                    font-size: 13px;
                     margin-left: 35px;
                     color: white;
                     width: 120px;
@@ -190,14 +189,10 @@ section {
 
 
                 img {
-                    height: 40px;
-                    width: 105px;
-                    border: 1px solid white;
+                    width: 130px;
                     border-radius: 5px;
                     margin-left: 15px;
                     cursor: pointer;
-                    background-color: black;
-                    object-fit: cover;
                 }
             }
 
