@@ -1,4 +1,4 @@
-.first-row {
+.top-bar-list {
     button {
         background-color: red;
         color: white;
@@ -71,28 +71,28 @@
                 }
             }
 
-            .ceoDrop1 {
+            .languages {
                 position: relative;
 
                 &:hover {
-                    .dropDown1 {
+                    .languages-dropdown-content {
                         visibility: visible;
                         opacity: 1;
                     }
                 }
             }
 
-            .ceoDrop2 {
+            .curencies {
                 position: relative;
 
-                .dropDown2 {
+                .curencies-dropdown-content {
                     li {
                         width: 70px;
                     }
                 }
 
                 &:hover {
-                    .dropDown2 {
+                    .curencies-dropdown-content {
                         visibility: visible;
                         opacity: 1;
                     }
@@ -107,7 +107,7 @@
 
 
 
-.second-row {
+.search-store {
     background-color: black;
     color: white;
     padding: 20px 0;
@@ -150,7 +150,7 @@
 
 }
 
-.third-row {
+.shop-for {
 
     ul {
         display: flex;
@@ -187,7 +187,7 @@
             width: 66em;
         }
 
-        .drop-shop-by-team {
+        .shop-by-team-dropdown-content  {
 
             .wrap-table {
 
@@ -227,8 +227,8 @@
             }
         }
 
-        .ceo-shop-by-team:hover {
-            .drop-shop-by-team {
+        .shop-by-team:hover {
+            .shop-by-team-dropdown-content {
                 opacity: 1;
                 visibility: visible;
             }
@@ -267,8 +267,8 @@
 
         }
 
-        .ceo-shop-by-driver:hover {
-            .drop-shop-by-driver {
+        .shop-by-driver:hover {
+            .shop-by-driver-dropdown-content {
                 opacity: 1;
                 visibility: visible;
             }
@@ -288,15 +288,15 @@
 
 
 
-        .ceo-shop-gifts:hover {
-            .drop-shop-gifts {
+        .shop-gifts:hover {
+            .shop-gifts-dropdown-content {
                 opacity: 1;
                 visibility: visible;
             }
         }
 
-        .ceo-shop-collectables:hover {
-            .drop-shop-collectables {
+        .shop-collectables:hover {
+            .shop-collectables-dropdown-content {
                 opacity: 1;
                 visibility: visible;
             }

@@ -1,64 +1,63 @@
-.first-row {
-    .first-col {
-        background-color: red;
-        color: white;
+.authentics-navigation {
+    background-color: red;
+    color: white;
 
-        nav {
-            img {
-                width: 125px;
-                height: 35px;
-                margin-left: 75px;
-            }
+    nav {
+        img {
+            width: 125px;
+            height: 35px;
+            margin-left: 75px;
+        }
 
-            h1 {
-                font-size: 40px;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: bolder;
-            }
+        h1 {
+            font-size: 40px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bolder;
+        }
 
-            ul {
-                li {
-                    padding: 15px;
+        ul {
+            li {
+                padding: 15px;
 
-                    a {
-                        color: white;
-                        font-size: 19px;
-
-                        i {
-                            font-size: 13px;
-                            padding-left: 3px;
-                            vertical-align: revert;
-                        }
-                    }
-
-                    &:hover {
-                        a {
-                            color: #d3d0d0;
-                        }
-                    }
-
-                }
-            }
-
-            input {
-                border: none;
-                background-color: red;
-                border-bottom: 1px solid white;
-
-                &::placeholder {
+                a {
                     color: white;
-                    font-weight: bold;
-                    font-size: 18px;
+                    font-size: 19px;
+
+                    i {
+                        font-size: 13px;
+                        padding-left: 3px;
+                        vertical-align: revert;
+                    }
                 }
 
-                &:focus{ outline-style: none; }
+                &:hover {
+                    a {
+                        color: #d3d0d0;
+                    }
+                }
+
+            }
+        }
+
+        input {
+            border: none;
+            background-color: red;
+            border-bottom: 1px solid white;
+
+            &::placeholder {
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
             }
 
+            &:focus {
+                outline-style: none;
+            }
         }
 
     }
 
-    .all-drop-downs {
+    .every-dropdown {
         opacity: 0;
         visibility: hidden;
         position: absolute;
@@ -95,7 +94,7 @@
         }
     }
 
-    .dropDown1 {
+    .teams-dropdown-content {
 
         .hover-ferrari:hover {
             border-color: #e23721;
@@ -140,36 +139,36 @@
     }
 
 
-    .ceoDrop1:hover {
-        .dropDown1 {
+    .teams-link:hover {
+        .teams-dropdown-content {
             opacity: 1;
             visibility: visible;
         }
     }
 
-    .ceoDrop2:hover {
-        .dropDown2 {
+    .drivers-link:hover {
+        .drivers-dropdown-content {
             opacity: 1;
             visibility: visible;
         }
     }
 
-    .ceoDrop3:hover {
-        .dropDown3 {
+    .categories-link:hover {
+        .categories-dropdown-content {
             opacity: 1;
             visibility: visible;
         }
     }
 
-    .ceoDrop4:hover {
-        .dropDown4 {
+    .auctions-link:hover {
+        .auctions-dropdown-content {
             opacity: 1;
             visibility: visible;
         }
     }
 
 
-    .dropDown5 {
+    .f1-race-cars-dropdown-content {
         ul {
             justify-content: flex-start;
 
@@ -181,8 +180,8 @@
 
 
 
-    .ceoDrop5:hover {
-        .dropDown5 {
+    .f1-race-cars-link:hover {
+        .f1-race-cars-dropdown-content {
             opacity: 1;
             visibility: visible;
         }
@@ -191,7 +190,7 @@
 
 }
 
-.logos {
+.team-logos {
     display: flex;
     justify-content: space-evenly;
     margin: 50px 0;
@@ -256,7 +255,7 @@
     }
 }
 
-.row-sales {
+.sales-section {
     padding: 60px 80px;
 
     h3 {
@@ -282,7 +281,7 @@
                 margin-bottom: 25px;
             }
 
-            .text {
+            .item-info {
                 width: 85%;
                 margin: 0 auto;
                 font-size: 18px;
@@ -292,7 +291,7 @@
                     margin-top: 10px;
                 }
 
-                .red-span {
+                .cost-now {
                     color: red;
                     font-size: 27px;
                     font-weight: bolder;
@@ -303,7 +302,7 @@
                     font-size: 15px;
                 }
 
-                .black-span {
+                .cost-before {
                     text-decoration-line: line-through;
                     margin-top: 5px;
                     font-size: 22px;

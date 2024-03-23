@@ -1,62 +1,58 @@
 .main {
+    .experiences-navigation {
+        background-color: red;
+        color: white;
 
-    .first-row {
-        .first-col {
-            background-color: red;
-            color: white;
+        nav {
+            img {
+                width: 120px;
+                height: 28px;
+                margin-left: 75px;
+            }
 
-            nav {
+            h1 {
+                font-size: 40px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bolder;
+            }
 
-                img {
-                    width: 120px;
-                    height: 28px;
-                    margin-left: 75px;
-                }
+            ul {
+                padding-left: 20px;
 
-                h1 {
-                    font-size: 40px;
-                    font-family: 'Montserrat', sans-serif;
-                    font-weight: bolder;
-                }
+                li {
+                    padding: 15px;
+                    cursor: pointer;
 
-                ul {
-                    padding-left: 20px;
-
-                    li {
-                        padding: 15px;
-                        cursor: pointer;
-
-                        a {
-                            color: white;
-                            font-size: 19px;
-                            vertical-align: bottom;
-                        }
-
-                        &:hover {
-                            background-color: black;
-                        }
-                    }
-                }
-
-                input {
-                    border: none;
-                    background-color: red;
-                    padding-bottom: 3px;
-                    border-bottom: 1px solid white;
-
-                    &::placeholder {
+                    a {
                         color: white;
-                        font-weight: bold;
-                        font-size: 18px;
+                        font-size: 19px;
+                        vertical-align: bottom;
+                    }
+
+                    &:hover {
+                        background-color: black;
                     }
                 }
+            }
 
+            input {
+                border: none;
+                background-color: red;
+                padding-bottom: 3px;
+                border-bottom: 1px solid white;
+
+                &::placeholder {
+                    color: white;
+                    font-weight: bold;
+                    font-size: 18px;
+                }
             }
 
         }
+
     }
 
-    .background-experience {
+    .banner {
         background-image: url('../../../assets/img/exp-background.jpeg');
         background-size: cover;
         background-position: 50% 75%;
@@ -78,7 +74,7 @@
             margin-top: 40px;
             letter-spacing: 0;
 
-            &:hover{
+            &:hover {
                 background-color: rgb(227, 225, 225);
             }
 
@@ -95,7 +91,7 @@
         background-color: #f7f4f1;
 
 
-        .third-row {
+        .race-packages {
             .wrap-scroller {
                 padding: 20px 10px 20px 0px;
                 border: 10px solid red;
@@ -132,79 +128,71 @@
                             background-color: white;
                             padding: 25px 10px;
                             margin: 2px 0;
+                            display: flex;
+                            text-align: center;
+                            align-items: center;
 
-                            a {
-                                text-decoration: none;
-                                color: black;
+                            div:first-child {
+                                display: grid;
+                                height: 45px;
+                                width: 110px;
+                                border-right: 1px dotted grey;
+                                margin-right: 20px;
 
-                                .ceo-li {
-                                    display: flex;
-                                    text-align: center;
-                                    align-items: center;
+                                span:first-child {
+                                    font-size: 19px;
+                                }
 
-                                    div:first-child {
-                                        display: grid;
-                                        height: 45px;
-                                        width: 110px;
-                                        border-right: 1px dotted grey;
-                                        margin-right: 20px;
+                                span:last-child {
+                                    padding: 3px 5px;
+                                    border-radius: 10px;
+                                    font-size: 12px;
+                                    background-color: #e1dddd;
+                                    color: #6b6b71;
+                                    letter-spacing: 0;
+                                    align-self: center;
+                                    margin: 0 auto;
+                                }
+                            }
 
-                                        span:first-child {
-                                            font-size: 19px;
-                                        }
+                            div:nth-child(2) {
+                                display: flex;
 
-                                        span:last-child {
-                                            padding: 3px 5px;
-                                            border-radius: 10px;
-                                            font-size: 12px;
-                                            background-color: #e1dddd;
-                                            color: #6b6b71;
-                                            letter-spacing: 0;
-                                            align-self: center;
-                                            margin: 0 auto;
-                                        }
+                                img {
+                                    height: 32px;
+                                    width: 47px;
+                                    border: 1px solid hsla(0, 0%, 47.1%, .4);
+                                    border-radius: 5px;
+                                    margin-right: 10px;
+                                    align-self: center;
+                                }
+
+                                .race {
+                                    display: grid;
+                                    text-align: left;
+
+                                    p {
+                                        font-size: 18px;
+                                        padding-bottom: 5px;
+                                        font-weight: bold;
                                     }
 
-                                    div:nth-child(2) {
-                                        display: flex;
+                                }
+                            }
 
-                                        img {
-                                            height: 32px;
-                                            width: 47px;
-                                            border: 1px solid hsla(0, 0%, 47.1%, .4);
-                                            border-radius: 5px;
-                                            margin-right: 10px;
-                                            align-self: center;
-                                        }
+                            div:last-child {
+                                margin: 0 0 0 auto;
 
-                                        .race {
-                                            display: grid;
-                                            text-align: left;
+                                button {
+                                    border: 1px solid grey;
+                                    font-size: 13px;
+                                    padding: 8px;
+                                    background-color: white;
+                                    border-radius: 5px;
 
-                                            p {
-                                                font-size: 18px;
-                                                padding-bottom: 5px;
-                                                font-weight: bold;
-                                            }
-
-                                        }
-                                    }
-
-                                    div:last-child {
-                                        margin: 0 0 0 auto;
-
-                                        button {
-                                            border: 1px solid grey;
-                                            font-size: 13px;
-                                            padding: 8px;
-                                            background-color: white;
-                                            border-radius: 5px;
-
-                                            i {
-                                                vertical-align: baseline;
-                                                color: red;
-                                            }
-                                        }
+                                    i {
+                                        vertical-align: baseline;
+                                        color: red;
                                     }
                                 }
                             }
@@ -214,7 +202,8 @@
                 }
             }
 
-            .mini-div {
+            .extra-packages {
+
                 .mini {
                     width: 300px;
                     cursor: pointer;
@@ -249,7 +238,7 @@
         }
 
 
-        .fourth-section {
+        .register-for-tickets {
             padding-top: 90px;
 
             h2 {
@@ -291,6 +280,10 @@
 
                     .form-group {
                         margin: 15px 0;
+                    }
+
+                    input[type=checkbox] {
+                        margin-right: 5px;
                     }
 
                     label {

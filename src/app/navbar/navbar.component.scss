@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
 
-    .col1 {
+    .choose-formula-site {
 
         img {
             margin-left: 70px;
@@ -27,7 +27,8 @@
         }
     }
 
-    .col2 {
+    .explore-nav {
+
         nav {
             display: flex;
             justify-content: flex-end;
@@ -66,7 +67,7 @@
                     height: 23px;
                 }
 
-                .span-f1-tv-left{
+                .span-f1-tv{
                     position: absolute;
                     top: 15px;
                     right: 25%;
@@ -85,9 +86,7 @@
 
 }
 
-.coll3 {
-
-    .right-nav {
+.register {
 
         a {
             color: white;
@@ -125,5 +124,4 @@
             vertical-align: top;
         }
 
-    }
 }

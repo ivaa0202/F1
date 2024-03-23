@@ -1,4 +1,4 @@
-.first-row {
+.tickets-navigation {
     background-color: red;    
 
     img {
@@ -118,8 +118,9 @@
         span {
             font-size: 18px;
             border-right: none;
-            padding: 24px 0px 24px 8px;
+            padding: 25px 0px 26px 8px;
             position: relative;
+            cursor: pointer;
 
             .bi-caret-down-fill {
                 font-size: 10px;
@@ -127,7 +128,7 @@
                 padding: 0 0 0 5px;
             }
 
-            .drop-from-span {
+            .paying-in {
                 opacity: 0;
                 visibility: hidden;
                 position: absolute;
@@ -179,7 +180,7 @@
         }
 
         span:hover {
-            .drop-from-span {
+            .paying-in {
                 opacity: 1;
                 visibility: visible;
             }
@@ -188,7 +189,7 @@
     }
 }
 
-.background {
+.banner {
     background-image: url('../../../assets/img/tickets/background.jpeg');
     background-size: cover;
     background-position: center;
@@ -225,7 +226,7 @@
 }
 
 
-.wrap-photo-container {
+.wrap-tickets-container {
     background-color: #f7f4f1;
     padding: 50px 60px;
 
@@ -249,7 +250,7 @@
             vertical-align: baseline;
         }
 
-        .headline-2 {
+        .help-needed {
 
             span,
             i {
@@ -272,7 +273,7 @@
 
     }
 
-    .photo-container {
+    .tickets-container {
         display: grid;
         grid-template-columns: auto auto auto auto;
         column-gap: 10px;
@@ -287,7 +288,7 @@
             position: relative;
             cursor: pointer;
 
-            .wrap-img-p {
+            .wrap-race-info {
                 display: flex;
                 padding: 20px 20px 60px 20px;
                 background-color: white;
@@ -321,7 +322,7 @@
                 .wrap-black-div-context {
                     margin-top: 29%;
 
-                    .wrap-img-p {
+                    .wrap-race-info {
                         padding: 0;
                         background-color: black;
 
@@ -332,8 +333,8 @@
                             align-self: center;
                         }
 
-                        .wrap-p {
-                            .p {
+                        .short-race-info {
+                            .race-name {
                                 color: white;
                                 background-color: black;
                                 margin: 0;
@@ -443,7 +444,7 @@
                     border-radius: 5px;
                 }
 
-                .p {
+                .race-name {
                     color: white;
                     background-color: black;
                     padding: 10px 0;
