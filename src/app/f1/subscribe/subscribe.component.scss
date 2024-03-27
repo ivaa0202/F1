@@ -230,7 +230,7 @@
         height: 62em;
         padding: 40px;
 
-        .first-half-div {
+        .heading-section {
             display: flex;
             align-items: center;
 
@@ -243,7 +243,7 @@
                 }
             }
 
-            .img {
+            .image-wrap {
                 position: relative;
                 cursor: pointer;
 
@@ -273,7 +273,7 @@
             }
         }
 
-        .second-half-div {
+        .tv-access {
             display: flex;
             justify-content: space-evenly;
             border-top: 1px solid #5b5b63;
@@ -356,7 +356,6 @@
 
                 .stream-one-div {
                     width: 31%;
-                    padding: 0 15px 15px 15px;
                     text-align: center;
 
                     h3 {
@@ -370,6 +369,7 @@
                         margin-bottom: 45px;
                         letter-spacing: 0;
                         line-height: 20px;
+                        padding: 0 15px;
                     }
 
                     img {
@@ -671,7 +671,7 @@
             }
         }
 
-        .small-group {
+        .availability-info {
             color: white;
             font-size: 12px;
             padding-left: 140px;
@@ -741,7 +741,7 @@
         }
     }
 
-    .kosa-crta {
+    .clipped-end {
         content: '';
         width: 0;
         height: 0;
@@ -750,13 +750,13 @@
         position: absolute;
     }
 
-    .kosa-crta1 {
+    .clipped-end1 {
         left: 0px;
         top: 0px;
         border-color: transparent #15151e;
     }
 
-    .kosa-crta2 {
+    .clipped-end2 {
         right: 0px;
         bottom: 0px;
         border-color: #15151e transparent;
@@ -771,10 +771,11 @@
         font-size: 20px;
         color: white;
         border-radius: 20px;
+        cursor: pointer;
 
         i {
             margin-right: 8px;
-            vertical-align: baseline;
+            vertical-align: top;
             font-size: 18px;
 
         }

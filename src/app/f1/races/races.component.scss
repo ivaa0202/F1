@@ -1,10 +1,10 @@
-section {
+.all-races {
     background-color: #15151e;
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
 
-    .trke {
+    .one-race {
         width: 10%;
         cursor: pointer;
         position: relative;
@@ -27,17 +27,17 @@ section {
             color: #949498;
         }
 
-        .imeDrzava {
+        .place {
             padding-top: 40px;
         }
 
-        .datum {
+        .date {
             color: white;
             font-size: 40px;
         }
 
         &:hover {
-            .imeDrzava {
+            .place {
                 color: white;
             }
         }

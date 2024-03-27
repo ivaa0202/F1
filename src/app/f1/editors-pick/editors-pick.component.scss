@@ -2,7 +2,7 @@ section {
     margin-left: 70px;
     position: relative;
 
-    .wrap {
+    .wrap-all-content {
         border-top: 12px solid #e23721;
         border-right: 12px solid #e23721;
         border-bottom: 12px solid #e23721;
@@ -25,7 +25,7 @@ section {
             padding-bottom: 150px;
         }
 
-        .slikePoredVidea {
+        .news {
             display: flex;
             flex-wrap: wrap;
             position: absolute;
@@ -33,7 +33,7 @@ section {
             right: 60px;
             cursor: pointer;
 
-            .jedna-pored-videa {
+            .news-each {
                 width: 300px;
                 margin: 10px;
 

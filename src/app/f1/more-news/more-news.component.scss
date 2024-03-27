@@ -27,7 +27,7 @@ section {
         margin: 15px auto 30px auto;
     }
 
-    .wrap {
+    .wrap-all-content {
         display: flex;
         justify-content: space-between;
         padding: 0px 70px 0 70px;
@@ -46,7 +46,7 @@ section {
             left: 0;
         }
 
-        .cetiriSlicice {
+        .card-each {
             width: 300px;
             cursor: pointer;
             position: relative;
@@ -77,7 +77,7 @@ section {
                     font-size: 12px;
                 }
 
-                span:last-child{
+                span:last-child {
                     content: '';
                     height: 6px;
                     display: block;

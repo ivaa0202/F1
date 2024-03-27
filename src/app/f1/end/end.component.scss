@@ -1,10 +1,10 @@
 section {
     background-color: #15151e;
 
-    .ourParents{
+    .our-parents {
 
         text-align: center;
-    padding-top: 40px;
+        padding-top: 40px;
 
         img {
             height: 15px;
@@ -19,7 +19,7 @@ section {
         }
     }
 
-    .sponzoriDiv {
+    .sponsors-first-line {
         padding-top: 55px;
         display: flex;
         justify-content: center;
@@ -35,10 +35,10 @@ section {
         width: 90%;
         border-color: #38383f;
         display: block;
-        margin: 30px auto 10px auto ;
+        margin: 30px auto 10px auto;
     }
 
-    .sponzoriDiv2 {
+    .sponsors-second-line {
         display: flex;
         justify-content: center;
 
@@ -68,13 +68,13 @@ section {
                 }
             }
 
-            .malaSlova {
+            .small-letters {
                 font-size: 11px;
             }
         }
     }
 
-    .ostatakLinkova {
+    .the-rest-of-links {
         padding: 20px 70px;
 
         a {
@@ -90,5 +90,3 @@ section {
         }
     }
 }
-
-
