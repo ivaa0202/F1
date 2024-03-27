@@ -1,24 +1,24 @@
 .main {
     letter-spacing: 0;
-    
-    .row1 {
+
+    .top-logo-section {
         background-color: #15151e;
         padding: 15px 30px;
-    
+
         img {
             width: 220px;
             height: 115px;
         }
     }
-    
+
     .row2 {
         background-color: #38383f;
-    
+
         .sign-in-and-register {
             display: flex;
             justify-content: center;
             text-align: center;
-    
+
             span {
                 text-decoration: none;
                 color: white;
@@ -29,18 +29,18 @@
                 margin-right: 10px;
                 height: 50px;
             }
-    
+
             span:first-child:hover {
                 border-bottom: 4px solid red;
             }
-    
+
             span:last-child:hover {
                 border-bottom: 4px solid white;
             }
         }
     }
 
-    .row3 {
+    .choose-form {
         background-color: #f7f4f1;
 
         .sign-in-form {
@@ -51,7 +51,9 @@
             h1 {
                 font-size: 34px;
                 font-weight: bold;
-                padding: 10px 0;
+                padding: 10px 0 20px 0;
+                border-bottom: 1px solid #d0d0d2;
+                margin-bottom: 35px;
             }
 
             form {
@@ -62,12 +64,12 @@
 
                 input {
                     padding: 15px;
-                    margin: 10px 0;
+                    margin: 10px 0 25px 0;
                     border: 1px solid black;
                     border-radius: 10px;
                 }
 
-                .second-form-group {
+                .password {
                     position: relative;
 
                     i {
@@ -119,7 +121,7 @@
     }
 
 
-    .row4 {
+    .footer {
         background-color: #f7f4f1;
 
         .last-section {
@@ -133,7 +135,7 @@
                 border-top-right-radius: 30px;
                 padding: 10px;
 
-                .first-div {
+                .static-links {
                     display: flex;
                     justify-content: space-between;
 
@@ -158,7 +160,7 @@
                     margin-bottom: 10px;
                 }
 
-                .second-div {
+                .choose-language {
                     display: flex;
                     justify-content: space-between;
 
@@ -204,7 +206,7 @@
         }
     }
 
-    .support-span{
+    .support-span {
         position: fixed;
         bottom: 30px;
         right: 30px;
@@ -213,11 +215,12 @@
         font-size: 20px;
         color: white;
         border-radius: 20px;
-        i{
+
+        i {
             margin-right: 8px;
             vertical-align: baseline;
             font-size: 18px;
-            
+
         }
     }
 

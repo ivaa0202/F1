@@ -1,11 +1,11 @@
 .main {
     letter-spacing: 0;
 
-    .row3 {
+    .full-form {
         background-color: #f7f4f1;
         padding: 30px;
 
-        .sign-in-form {
+        .register-form {
             width: 45%;
             margin: 0 auto;
             padding: 10px 20px;
@@ -15,7 +15,9 @@
             h1 {
                 font-size: 34px;
                 font-weight: bold;
-                padding: 10px 0;
+                padding: 10px 0 20px 0;
+                border-bottom: 1px solid #d0d0d2;
+                margin-bottom: 35px;
             }
 
             form {
@@ -29,7 +31,7 @@
                 input[type=email],
                 select {
                     padding: 13px 10px;
-                    margin: 10px 0;
+                    margin: 10px 0 25px 0;
                     border: 1px solid black;
                     border-radius: 10px;
                 }

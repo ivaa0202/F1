@@ -1,6 +1,6 @@
 <div class="main">
 
-    <div class="row row1">
+    <div class="row top-logo-section">
         <img src="assets/img/f1 logo.png">
     </div>
     <div class="row row2">
@@ -10,18 +10,17 @@
         </div>
     </div>
 
-    <div *ngIf="activeSection === 'sign-in'" class="row row3">
+    <div *ngIf="activeSection === 'sign-in'" class="row choose-form">
         <div class="sign-in-form">
             <h1>SIGN IN</h1>
-            <hr>
             <form>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter your username">
+                    <label for="sign-in-email">Email address</label>
+                    <input type="text" class="form-control" id="sign-in-email" placeholder="Enter your username">
                 </div>
-                <div class="form-group second-form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1"
+                <div class="form-group password">
+                    <label for="sign-in-password">Password</label>
+                    <input type="password" class="form-control" id="sign-in-password"
                         placeholder="Enter your password"><i class="bi bi-eye-slash"></i>
                 </div>
                 <div class="forgotten-password"><a href="">Forgotten password?</a></div><br>
@@ -33,11 +32,11 @@
 
     <app-register *ngIf="activeSection === 'register'"></app-register>
 
-    <div class="row row4">
+    <div class="row footer">
 
         <div class="last-section">
             <div class="wrap">
-                <div class="first-div">
+                <div class="static-links">
                     <img src="assets/img/f1 logo.png">
                     <ul>
                         <li>Privacy Policy</li>
@@ -48,7 +47,7 @@
                     </ul>
                 </div>
                 <hr>
-                <div class="second-div">
+                <div class="choose-language">
                     <ul>
                         <li><a href="">EN</a></li>
                         <li><a href="">FR</a></li>
