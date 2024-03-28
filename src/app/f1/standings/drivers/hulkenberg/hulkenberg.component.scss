@@ -2,9 +2,9 @@
 @include driver();
 
 .main {
-    .fourth-section {
-        .also-divs {
-            .also-div {
+    .articles-section {
+        .articles-content {
+            .one-article {
                 &:first-child {
                     img {
                         object-fit: fill;

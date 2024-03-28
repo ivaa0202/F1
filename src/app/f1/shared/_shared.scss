@@ -2,7 +2,7 @@
     .main {
         border: 40px solid #e3e1df;
 
-        .first-section {
+        .intro-section {
 
             .left-col {
                 padding-right: 0;
@@ -11,14 +11,14 @@
                     width: 700px;
                 }
 
-                .below-photo1 {
+                .driver-name {
                     background-color: white;
                     position: absolute;
-                    top: 530px;
+                    top: 535px;
                     left: 40px;
                     width: 700px;
                     padding-bottom: 100px;
-                    height: 261px;
+                    height: 260px;
                     padding: 30px;
 
                     span {
@@ -46,7 +46,7 @@
                 font-size: 21px;
                 padding: 35px;
 
-                .helmet-h2-div {
+                .helmet-container {
                     margin-bottom: 20px;
 
                     img {
@@ -54,7 +54,7 @@
                         width: 200px;
                     }
 
-                    .h2-div {
+                    .visit-merch {
                         display: inline-block;
                         margin-left: 120px;
                         font-weight: bold;
@@ -66,28 +66,30 @@
                     }
                 }
 
-                table {
+                .driver-info {
 
                     td {
                         padding: 4px;
+                        font-size: 19px;
                     }
 
 
                     td:nth-of-type(1) {
                         font-weight: bold;
+                        width: 64%;
                     }
                 }
 
             }
         }
 
-        .second-section {
+        .news-section {
             display: flex;
             justify-content: space-between;
             background-color: white;
             margin-bottom: 200px;
 
-            .one-div {
+            .one-news {
                 width: 334px;
                 cursor: pointer;
                 position: relative;
@@ -126,7 +128,7 @@
                     }
 
                     p {
-                        font-size: 21px;
+                        font-size: 20px;
                         margin: 10px 0;
                     }
 
@@ -152,6 +154,8 @@
 
                         span:last-child {
                             color: grey;
+                            font-weight: 600;
+                            font-size: 14px;
                         }
                     }
                 }
@@ -159,16 +163,18 @@
         }
 
 
-        .third-section {
+        .biography-section {
             padding: 50px;
 
             h1 {
                 font-size: 35px;
+                font-weight: 500;
             }
 
             p {
                 margin-top: 25px;
-                font-size: 19px;
+                font-size: 17px;
+                line-height: 27px;
             }
 
             .carousel {
@@ -176,7 +182,7 @@
             }
         }
 
-        .fourth-section {
+        .articles-section {
             background-color: #e3e1df;
 
             h1 {
@@ -185,12 +191,12 @@
                 padding: 50px 0;
             }
 
-            .also-divs {
+            .articles-content {
                 display: flex;
                 justify-content: space-between;
                 cursor: pointer;
 
-                .also-div {
+                .one-article {
                     position: relative;
                     opacity: .99;
                     overflow: hidden;
@@ -217,7 +223,7 @@
                         object-fit: cover;
                     }
 
-                    .span-group {
+                    .article-title {
                         padding: 20px;
                         color: #fff;
                         position: absolute;
@@ -235,7 +241,7 @@
                         }
 
                         span:last-child {
-                            font-size: 21px;
+                            font-size: 20px;
                         }
 
                     }
@@ -247,7 +253,7 @@
                     }
 
                     &:hover {
-                        .span-group {
+                        .article-title {
                             padding-bottom: 45px;
                         }
 
@@ -297,7 +303,7 @@
                             object-fit: contain;
                         }
 
-                        .h2-div {
+                        .visit-merch {
                             display: grid;
                             color: red;
                             font-weight: bold;
@@ -474,7 +480,7 @@
                     }
 
                     p {
-                        font-size: 21px;
+                        font-size: 20px;
                         margin: 10px 0;
                     }
 
@@ -592,5 +598,95 @@
             }
 
         }
+    }
+}
+
+
+
+@mixin teamColors() {
+
+    .ferrari-color {
+        background-color: #e23721;
+    }
+
+    .red-bull-color {
+        background-color: #3671C6;
+    }
+
+    .merc-color {
+        background-color: #6CD3BF;
+    }
+
+    .alpine-color {
+        background-color: #2293D1;
+    }
+
+    .haas-color {
+        background-color: #B6BABD;
+    }
+
+    .alfa-romeo-color {
+        background-color: #C92D4B;
+    }
+
+    .mclaren-color {
+        background-color: #F58020;
+    }
+
+    .aston-martin-color {
+        background-color: #358C75;
+    }
+
+    .alpha-tauri-color {
+        background-color: #5E8FAA;
+    }
+
+    .williams-color {
+        background-color: #37BEDD;
+    }
+}
+
+
+
+@mixin teamColorsOnHover() {
+
+    .hover-ferrari:hover {
+        border-color: #e23721;
+    }
+
+    .hover-red-bull:hover {
+        border-color: #3671C6;
+    }
+
+    .hover-mercedes:hover {
+        border-color: #6CD3BF;
+    }
+
+    .hover-alpine:hover {
+        border-color: #2293D1;
+    }
+
+    .hover-haas:hover {
+        border-color: #B6BABD;
+    }
+
+    .hover-alfa:hover {
+        border-color: #C92D4B;
+    }
+
+    .hover-mclaren:hover {
+        border-color: #F58020;
+    }
+
+    .hover-aston:hover {
+        border-color: #358C75;
+    }
+
+    .hover-alphatauri:hover {
+        border-color: #5E8FAA;
+    }
+
+    .hover-williams:hover {
+        border-color: #37BEDD;
     }
 }

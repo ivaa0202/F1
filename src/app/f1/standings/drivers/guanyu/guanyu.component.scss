@@ -1,2 +1,9 @@
 @import "../../../shared/shared";
 @include driver();
+
+.driver-info {
+
+    td:nth-of-type(1) {
+        width: 65% !important;
+    }
+}

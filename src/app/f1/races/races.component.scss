@@ -8,8 +8,8 @@
         width: 10%;
         cursor: pointer;
         position: relative;
-        padding-top: 120px;
-        padding-bottom: 280px;
+        padding-top: 110px;
+        padding-bottom: 260px;
         border-right: 1px solid #38383f;
         border-bottom: 1px solid #38383f;
         border-bottom-right-radius: 10px;
@@ -28,12 +28,15 @@
         }
 
         .place {
-            padding-top: 40px;
+            padding-top: 25px;
+            font-weight: 700;
+            font-size: 13px;
         }
 
         .date {
             color: white;
             font-size: 40px;
+            font-weight: 600;
         }
 
         &:hover {

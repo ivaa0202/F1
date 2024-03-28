@@ -1,3 +1,5 @@
+@import "../shared/shared";
+
 .glavni {
     background-color: #e23721;
     position: relative;
@@ -410,54 +412,15 @@
                     padding: 10px 5px;
 
                     span {
-
                         height: 12px;
                         width: 4px;
                         display: inline-block;
-                        background-color: aquamarine;
                         margin-right: 5px;
                         vertical-align: baseline;
+
                     }
 
-                    .boja-ferari {
-                        background-color: #e23721;
-                    }
-
-                    .boja-red-bull {
-                        background-color: #3671C6;
-                    }
-
-                    .boja-merc {
-                        background-color: #6CD3BF;
-                    }
-
-                    .boja-alpine {
-                        background-color: #2293D1;
-                    }
-
-                    .boja-haas {
-                        background-color: #B6BABD;
-                    }
-
-                    .boja-alfa {
-                        background-color: #C92D4B;
-                    }
-
-                    .boja-mclaren {
-                        background-color: #F58020;
-                    }
-
-                    .boja-aston-martin {
-                        background-color: #358C75;
-                    }
-
-                    .boja-alpha-tauri {
-                        background-color: #5E8FAA;
-                    }
-
-                    .boja-williams {
-                        background-color: #37BEDD;
-                    }
+                    @include teamColors();
 
                     i {
                         color: white;
@@ -465,46 +428,8 @@
                     }
 
                 }
-
-                .hover-ferrari:hover {
-                    border-color: #e23721;
-                }
-
-                .hover-red-bull:hover {
-                    border-color: #3671C6;
-                }
-
-                .hover-mercedes:hover {
-                    border-color: #6CD3BF;
-                }
-
-                .hover-alpine:hover {
-                    border-color: #2293D1;
-                }
-
-                .hover-haas:hover {
-                    border-color: #B6BABD;
-                }
-
-                .hover-alfa:hover {
-                    border-color: #C92D4B;
-                }
-
-                .hover-mclaren:hover {
-                    border-color: #F58020;
-                }
-
-                .hover-aston:hover {
-                    border-color: #358C75;
-                }
-
-                .hover-alphatauri:hover {
-                    border-color: #5E8FAA;
-                }
-
-                .hover-williams:hover {
-                    border-color: #37BEDD;
-                }
+                
+                @include teamColorsOnHover();
 
             }
         }
@@ -557,7 +482,7 @@
                         align-items: flex-start;
                     }
 
-                    .crta {
+                    .team-color-line {
                         display: block;
                         height: 20px;
                         width: 50px;
@@ -568,87 +493,12 @@
                         z-index: -1;
                     }
 
-                    .boja-ferari {
-                        background-color: #e23721;
-                    }
+                    @include teamColors();
 
-                    .boja-red-bull {
-                        background-color: #3671C6;
-                    }
-
-                    .boja-merc {
-                        background-color: #6CD3BF;
-                    }
-
-                    .boja-alpine {
-                        background-color: #2293D1;
-                    }
-
-                    .boja-haas {
-                        background-color: #B6BABD;
-                    }
-
-                    .boja-alfa {
-                        background-color: #C92D4B;
-                    }
-
-                    .boja-mclaren {
-                        background-color: #F58020;
-                    }
-
-                    .boja-aston-martin {
-                        background-color: #358C75;
-                    }
-
-                    .boja-alpha-tauri {
-                        background-color: #5E8FAA;
-                    }
-
-                    .boja-williams {
-                        background-color: #37BEDD;
-                    }
                 }
             }
 
-            .hover-ferrari:hover {
-                border-color: #e23721;
-            }
-
-            .hover-red-bull:hover {
-                border-color: #3671C6;
-            }
-
-            .hover-mercedes:hover {
-                border-color: #6CD3BF;
-            }
-
-            .hover-alpine:hover {
-                border-color: #2293D1;
-            }
-
-            .hover-haas:hover {
-                border-color: #B6BABD;
-            }
-
-            .hover-alfa:hover {
-                border-color: #C92D4B;
-            }
-
-            .hover-mclaren:hover {
-                border-color: #F58020;
-            }
-
-            .hover-aston:hover {
-                border-color: #358C75;
-            }
-
-            .hover-alphatauri:hover {
-                border-color: #5E8FAA;
-            }
-
-            .hover-williams:hover {
-                border-color: #37BEDD;
-            }
+            @include teamColorsOnHover();
         }
 
 

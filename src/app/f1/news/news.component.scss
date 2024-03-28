@@ -80,7 +80,7 @@ section {
                 border-bottom: 1px solid gray;
                 border-right: 1px solid gray;
                 border-bottom-right-radius: 10px;
-                font-size: 17px;
+                font-size: 15px;
                 padding: 12px;
                 height: 120px;
                 background-color: white;
@@ -88,6 +88,7 @@ section {
                 position: absolute;
                 left: 0;
                 bottom: -120px;
+                line-height: 16px;
             }
 
             span {

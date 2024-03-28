@@ -1,3 +1,5 @@
+@import "../../shared/shared";
+
 .naslov {
     text-align: center;
     background-color: #252531;
@@ -8,6 +10,8 @@
         font-size: 45px;
         font-weight: bold;
         margin-bottom: 10px;
+        font-stretch: expanded;
+        font-family: system-ui;
     }
 
     p {
@@ -21,7 +25,7 @@
     }
 }
 
-.tabela {
+.last-race-standings-list {
     background-color: #ededed;
     height: 26em;
     margin: 0;
@@ -69,7 +73,7 @@
                 }
 
 
-                .broj {
+                .order {
                     font-weight: bold;
                 }
 
@@ -79,40 +83,14 @@
                     text-transform: uppercase;
                 }
 
-                .crtica {
+                .team-color-line {
                     height: 15px;
                     width: 5px;
                     display: inline-block;
                     vertical-align: middle;
                 }
 
-                .boja-ferari {
-                    background-color: #e23721;
-                }
-
-                .boja-red-bull {
-                    background-color: #3671C6;
-                }
-
-                .boja-merc {
-                    background-color: #6CD3BF;
-                }
-
-                .boja-alpine {
-                    background-color: #2293D1;
-                }
-
-                .boja-haas {
-                    background-color: #B6BABD;
-                }
-
-                .boja-alfa {
-                    background-color: #C92D4B;
-                }
-
-                .boja-mclaren {
-                    background-color: #F58020;
-                }
+                @include teamColors();
 
                 .team {
                     font-size: 14px;
@@ -155,7 +133,7 @@
     display: block;
     text-align: center;
     background-color: #ededed;
-    padding:30px;
+    padding: 30px;
     margin-bottom: 30px;
 
     a {
@@ -174,7 +152,7 @@
             font-weight: 500;
 
             i {
-                color: #e23721; 
+                color: #e23721;
             }
         }
 
